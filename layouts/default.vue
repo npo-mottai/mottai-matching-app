@@ -1,10 +1,19 @@
 <template>
   <div>
-    <Nuxt />
+    <NavBar />
+    <div
+      class="motttai-app-container flex flex-col min-h-screen px-4 bg-gray-100"
+    >
+      <Nuxt />
+    </div>
   </div>
 </template>
 
 <style>
+* {
+  color: #222222;
+}
+
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -22,6 +31,24 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+
+.mottai-app-container {
+  margin: 0 auto;
+  min-height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
 }
 
 .button--green {
