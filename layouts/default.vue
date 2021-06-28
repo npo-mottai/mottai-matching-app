@@ -57,4 +57,8 @@ h2 {
 h3 {
   @apply font-semibold text-lg;
 }
+
+.content-container {
+  @apply container mx-auto lg:px-12 xl:px-16;
+}
 </style>

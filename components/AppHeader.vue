@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="content-container">
     <div class="flex justify-between h-16 bg-gray-100 px-4">
       <p class="my-auto">ここにアプリのロゴ</p>
       <div class="flex my-auto">

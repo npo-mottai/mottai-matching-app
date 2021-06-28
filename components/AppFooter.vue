@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="content-container">
     <div class="px-4 py-16">
       <div class="pb-4">
         <p class="my-auto">ここにアプリのロゴ</p>

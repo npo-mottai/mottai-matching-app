@@ -39,64 +39,64 @@
       </h1>
     </div>
     <div class="w-screen" style="background-color: #e6f2ff">
-      <div class="container mx-auto">
+      <div class="content-container">
         <div class="work-list-section px-4 py-16">
           <h2>募集中の仕事</h2>
-          <div class="lg:grid lg:grid-cols-2 lg:gap-4">
-            <div class="flex w-full pb-8">
-              <p class="pr-4 my-0">
-                <img
-                  src="/img/yago-san.jpg"
-                  class="h-18 w-24 object-contain rounded-md"
-                  alt="work-thumbnail-image"
-                />
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+              <p>
+                <img src="/img/yago-san.jpg" alt="work-thumbnail-image" />
               </p>
-              <div class="my-0">
+              <div class="p-4">
                 <h3>みかん農家で果物の収穫体験</h3>
-                <ul>
-                  <li class="flex items-center">
-                    <outline-map-icon class="inline w-4 h-4 mr-1" />
-                    <span>場所：神奈川県小田原市石橋 322</span>
-                  </li>
-                  <li class="flex items-center">
-                    <outline-location-marker-icon class="inline w-4 h-4 mr-1" />
-                    <span>最寄り駅：JR 早川駅, JR 小田原駅</span>
-                  </li>
-                  <li class="flex items-center">
-                    <outline-gift-icon class="inline w-4 h-4 mr-1" />
-                    <span>報酬：旬の果物</span>
-                  </li>
-                </ul>
+                <div>
+                  <p>場所：神奈川県小田原市石橋 322</p>
+                  <p>最寄り駅：JR 早川駅、JR 小田原駅</p>
+                  <p>報酬：旬の果物</p>
+                </div>
               </div>
             </div>
-            <div class="flex w-full pb-8">
-              <p class="pr-4 my-0">
-                <img
-                  src="/img/yago-san.jpg"
-                  class="h-18 w-24 object-contain rounded-md"
-                  alt="work-thumbnail-image"
-                />
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+              <p>
+                <img src="/img/yago-san.jpg" alt="work-thumbnail-image" />
               </p>
-              <div class="my-0">
+              <div class="p-4">
                 <h3>みかん農家で果物の収穫体験</h3>
-                <ul>
-                  <li class="flex items-center">
-                    <outline-map-icon class="inline w-4 h-4 mr-1" />
-                    <span>場所：神奈川県小田原市石橋 322</span>
-                  </li>
-                  <li class="flex items-center">
-                    <outline-location-marker-icon class="inline w-4 h-4 mr-1" />
-                    <span>最寄り駅：JR 早川駅, JR 小田原駅</span>
-                  </li>
-                  <li class="flex items-center">
-                    <outline-gift-icon class="inline w-4 h-4 mr-1" />
-                    <span>報酬：旬の果物</span>
-                  </li>
-                </ul>
+                <div>
+                  <p>場所：神奈川県小田原市石橋 322</p>
+                  <p>最寄り駅：JR 早川駅、JR 小田原駅</p>
+                  <p>報酬：旬の果物</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+              <p>
+                <img src="/img/yago-san.jpg" alt="work-thumbnail-image" />
+              </p>
+              <div class="p-4">
+                <h3>みかん農家で果物の収穫体験</h3>
+                <div>
+                  <p>場所：神奈川県小田原市石橋 322</p>
+                  <p>最寄り駅：JR 早川駅、JR 小田原駅</p>
+                  <p>報酬：旬の果物</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+              <p>
+                <img src="/img/yago-san.jpg" alt="work-thumbnail-image" />
+              </p>
+              <div class="p-4">
+                <h3>みかん農家で果物の収穫体験</h3>
+                <div>
+                  <p>場所：神奈川県小田原市石橋 322</p>
+                  <p>最寄り駅：JR 早川駅、JR 小田原駅</p>
+                  <p>報酬：旬の果物</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="flex">
+          <div class="flex justify-center">
             <a>募集中の仕事をもっと見る </a>
             <outline-arrow-narrow-right-icon class="ml-4 w-6 h-6" />
           </div>
@@ -104,7 +104,7 @@
       </div>
     </div>
     <div class="w-screen" style="background-color: #eff3f8">
-      <div class="container mx-auto">
+      <div class="content-container">
         <div class="service-description-section px-4 py-16">
           <h2>サービスについて</h2>
           <p class="pb-4">
@@ -124,7 +124,7 @@
       </div>
     </div>
     <div class="w-screen" style="background-color: #e6f2ff">
-      <div class="container mx-auto">
+      <div class="content-container">
         <div class="steps-to-matching-section px-4 py-16">
           <h2>マッチングまでの流れ</h2>
           <div class="flex pb-4">
@@ -191,13 +191,13 @@
       </div>
     </div>
     <div class="w-screen" style="background-color: #eff3f8">
-      <div class="container mx-auto">
+      <div class="content-container">
         <div class="faq-section px-4 py-16" style="background-color: #eff3f8">
           <h2>よくある質問</h2>
           <div class="pb-4">
             <div class="flex pb-2">
-              <span class="font-semibold italic mr-4">Q. </span>
-              <p class="font-semibold italic">
+              <span class="font-semibold mr-4">Q. </span>
+              <p class="font-semibold">
                 農家さんとはどのように連絡を取り合えばよいですか？
               </p>
             </div>
@@ -214,8 +214,8 @@
           </div>
           <div class="pb-4">
             <div class="flex pb-2">
-              <span class="font-semibold italic mr-4">Q. </span>
-              <p class="font-semibold italic">土日にも参加できますか？</p>
+              <span class="font-semibold mr-4">Q. </span>
+              <p class="font-semibold">土日にも参加できますか？</p>
             </div>
             <div class="flex pb-2">
               <span class="mr-4">A. </span>
@@ -226,10 +226,8 @@
           </div>
           <div class="pb-4">
             <div class="flex pb-2">
-              <span class="font-semibold italic mr-4">Q. </span>
-              <p class="font-semibold italic">
-                最寄り駅までの交通費は出ますか？
-              </p>
+              <span class="font-semibold mr-4">Q. </span>
+              <p class="font-semibold">最寄り駅までの交通費は出ますか？</p>
             </div>
             <div class="flex pb-2">
               <span class="mr-4">A. </span>
@@ -240,8 +238,8 @@
           </div>
           <div class="pb-4">
             <div class="flex pb-2">
-              <span class="font-semibold italic mr-4">Q. </span>
-              <p class="font-semibold italic">
+              <span class="font-semibold mr-4">Q. </span>
+              <p class="font-semibold">
                 同じ農家さんのお手伝いに繰り返し行っても良いですか？
               </p>
             </div>
