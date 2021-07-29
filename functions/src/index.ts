@@ -1,6 +1,6 @@
 import * as functions from 'firebase-functions';
 /* @ts-ignore */
-import {Nuxt} from 'nuxt';
+import { Nuxt } from 'nuxt';
 
 const nuxt = new Nuxt({
     dev: false,

@@ -3,7 +3,7 @@
     <div class="flex justify-between h-16 px-4">
       <nuxt-link to="/" class="my-auto">
         <p>
-          <img src="/img/mottai-logo.svg" alt="NPO法人 MOTTAI" />
+          <img class="h-12" src="/img/mottai-logo.svg" alt="NPO法人 MOTTAI" />
         </p>
       </nuxt-link>
       <div class="flex my-auto">

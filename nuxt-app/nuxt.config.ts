@@ -7,14 +7,19 @@ const prodFirebaseServiceKey = prodServiceAccountKey
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'mottai-matching-app',
+    title: 'マッチングサービス | NPO法人 MOTTAI',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'NPO 法人 MOTTAI が運営する、日本各地の農家さんと、そのお手伝いをしながら農業体験をしてみたい方を繋げるマッチングサービスです。「労働」とその対価としての「お金」の交換ではなく、「農業体験・お手伝い」と「報酬として野菜や果物を渡す」という形式の新しいコミュニケーションをつくることで、農家さんと私たちの間に新しい関係性が生まれたり、農家さんが抱えている規格外野菜などの良い行き場になったりすることを期待しています。',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },

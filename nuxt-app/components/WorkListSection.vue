@@ -3,7 +3,7 @@
     <div class="content-container">
       <div class="work-list-section px-4 py-16">
         <h2>募集中の仕事</h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
           <div
             v-for="item in ['1', '2', '3', '4', '5', '6', '7', '8']"
             :key="item"
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="flex justify-center">
-          <a>募集中の仕事をもっと見る </a>
+          <!-- <a>募集中の仕事をもっと見る </a> -->
           <!-- <outline-arrow-narrow-right-icon class="ml-4 w-6 h-6" /> -->
         </div>
       </div>

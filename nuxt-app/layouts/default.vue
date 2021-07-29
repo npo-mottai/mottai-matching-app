@@ -67,6 +67,6 @@ h3 {
 }
 
 .content-container {
-  @apply container mx-auto lg:px-12 xl:px-24;
+  @apply container mx-auto lg:px-12 xl:px-48 2xl:px-72;
 }
 </style>

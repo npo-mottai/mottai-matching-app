@@ -2,7 +2,50 @@
   <div>
     <div class="w-screen" style="background-color: #e6f2ff">
       <div class="content-container">
-        <div class="flex justify-center">
+        <div class="hidden sm:block pt-16 pb-2">
+          <div
+            class="
+              bg-white
+              rounded-xl
+              shadow-md
+              overflow-hidden
+              p-4
+              mb-8
+              md:mx-16
+              lg:mx-32
+            "
+          >
+            <div class="flex">
+              <div class="p-4">
+                <img
+                  class="w-48 rounded-xl"
+                  src="/img/yago-san.jpg"
+                  alt="work-thumbnail-image"
+                />
+              </div>
+              <div class="flex-1 p-4">
+                <h3>みかん農家で果物の収穫体験</h3>
+                <ul>
+                  <p>
+                    場所：神奈川県小田原市石橋
+                    322あああああああああああああああああああああああああああああああああああああああああああああああ
+                  </p>
+                  <p>最寄り駅：JR 早川駅、JR</p>
+                  <p>報酬：旬の果物</p>
+                </ul>
+              </div>
+            </div>
+            <div class="flex justify-center">
+              <button
+                class="text-white font-bold py-2 px-4 rounded-xl"
+                style="background-color: #3ea8ff"
+              >
+                この仕事に申し込む
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="sm:hidden flex justify-center">
           <div
             class="
               work-summary-section

@@ -2,11 +2,21 @@
   <div class="content-container">
     <div class="px-4 py-16">
       <div class="pb-4">
-        <p class="my-auto">ここにアプリのロゴ</p>
-        <span>「報酬は食べ物」の農業体験マッチングサービス</span>
+        <img
+          class="object-contain h-8"
+          src="/img/mottai-logo.svg"
+          alt="NPO法人 MOTTAI"
+        />
       </div>
       <ul>
-        <li class="pb-2 hover:underline">運営法人</li>
+        <li class="pb-2 hover:underline">
+          <a
+            href="https://www.npo-mottai.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >運営法人</a
+          >
+        </li>
         <li class="pb-2 hover:underline">利用規約</li>
         <li class="pb-2 hover:underline">
           <a
@@ -17,6 +27,7 @@
           >
         </li>
       </ul>
+      <div>©2021– NPO法人 MOTTAI</div>
     </div>
   </div>
 </template>

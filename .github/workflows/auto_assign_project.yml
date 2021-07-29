@@ -17,10 +17,10 @@ jobs:
         uses: srggrs/assign-one-project-github-action@1.2.1
         if: github.event.action == 'opened'
         with:
-          project: 'https://github.com/npo-mottai/mottai-matching-app/projects/1'
+          project: "https://github.com/npo-mottai/mottai-matching-app/projects/1"
 
       - name: Assign all issues and pull requests on this repository to the project
         uses: srggrs/assign-one-project-github-action@1.2.1
         with:
-          project: 'https://github.com/npo-mottai/mottai-matching-app/projects/1'
-          column_name: 'To do'
+          project: "https://github.com/npo-mottai/mottai-matching-app/projects/1"
+          column_name: "To do"

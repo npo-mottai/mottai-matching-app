@@ -19,22 +19,86 @@
       md:bg-orange-500
       lg:bg-green-500
       xl:bg-blue-500
+      2xl:bg-yellow-500
     "
   >
-    <div class="block text-white sm:hidden md:hidden lg:hidden xl:hidden">
+    <div
+      class="
+        block
+        text-white
+        sm:hidden
+        md:hidden
+        lg:hidden
+        xl:hidden
+        2xl:hidden
+      "
+    >
       al
     </div>
-    <div class="hidden text-white sm:block md:hidden lg:hidden xl:hidden">
+    <div
+      class="
+        hidden
+        text-white
+        sm:block
+        md:hidden
+        lg:hidden
+        xl:hidden
+        2xl:hidden
+      "
+    >
       sm
     </div>
-    <div class="hidden text-white sm:hidden md:block lg:hidden xl:hidden">
+    <div
+      class="
+        hidden
+        text-white
+        sm:hidden
+        md:block
+        lg:hidden
+        xl:hidden
+        2xl:hidden
+      "
+    >
       md
     </div>
-    <div class="hidden text-white sm:hidden md:hidden lg:block xl:hidden">
+    <div
+      class="
+        hidden
+        text-white
+        sm:hidden
+        md:hidden
+        lg:block
+        xl:hidden
+        2xl:hidden
+      "
+    >
       lg
     </div>
-    <div class="hidden text-white sm:hidden md:hidden lg:hidden xl:block">
+    <div
+      class="
+        hidden
+        text-white
+        sm:hidden
+        md:hidden
+        lg:hidden
+        xl:block
+        2xl:hidden
+      "
+    >
       xl
+    </div>
+    <div
+      class="
+        hidden
+        text-white
+        sm:hidden
+        md:hidden
+        lg:hidden
+        xl:hidden
+        2xl:block
+      "
+    >
+      2xl
     </div>
   </div>
 </template>
