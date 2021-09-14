@@ -4,11 +4,8 @@
       <div class="work-list-section px-4 py-16">
         <h2>募集中の仕事</h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
-          <div
-            v-for="item in ['1', '2', '3', '4', '5', '6', '7', '8']"
-            :key="item"
-          >
-            <nuxt-link :to="workPagePath(item)">
+          <div v-for="work in works" :key="work.title">
+            <nuxt-link v-if="work.reference" :to="workPagePath(work.documentId)">
               <div
                 class="
                   bg-white
@@ -23,14 +20,17 @@
                 "
               >
                 <p>
-                  <img src="/img/yago-san.jpg" alt="work-thumbnail-image" />
+                  <img src="/img/yago-san.jpg" alt="work-thumbnail-image">
                 </p>
                 <div class="p-4">
-                  <h3 class="work-title">みかん農家で果物の収穫体験</h3>
+                  <h3 class="work-title">
+                    {{ work.title }}
+                  </h3>
                   <div>
-                    <p>場所：神奈川県小田原市石橋 322</p>
-                    <p>最寄り駅：JR 早川駅、JR 小田原駅</p>
-                    <p>報酬：旬の果物</p>
+                    <p>場所：{{ work.address }}</p>
+                    <p>最寄り駅：{{ work.station }}</p>
+                    <p>報酬：{{ work.reward }}</p>
+                    <p>更新日：{{ updateDate(work.updatedAt) }}</p>
                   </div>
                 </div>
               </div>
@@ -47,16 +47,33 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+import { Timestamp } from '@firebase/firestore-types'
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
+import { Work } from '~/types/work'
+import { formatDate, japaneseDayOfWeek } from '~/utils/datetime/datetime'
 
 @Component({
+  name: 'WorkListSection',
   scrollToTop: true,
-  layout: 'mypage',
-  components: {},
+  layout: 'default',
+  components: {}
 })
 export default class extends Vue {
-  workPagePath(slug: string): string {
-    return 'work' + '/' + slug
+  @Prop({
+    type: Array,
+    default: [],
+    required: true
+  })
+  works!: Work[]
+
+  updateDate (timestamp: Timestamp): string {
+    const date = new Date(timestamp.seconds * 1000)
+    const dayOfWeek = japaneseDayOfWeek(date)
+    return `${formatDate(date)} (${dayOfWeek})`
+  }
+
+  workPagePath (documentId: string): string {
+    return 'work/' + documentId
   }
 }
 </script>

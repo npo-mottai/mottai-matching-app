@@ -12,6 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@firebase/firestore-types": "^2.3.0",
     "@nuxt-hero-icons/outline": "^1.0.1",
     "@nuxt-hero-icons/solid": "^1.0.1",
     "@nuxtjs/axios": "^5.13.1",

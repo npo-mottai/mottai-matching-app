@@ -5,17 +5,17 @@ export const japaneseDayOfWeek = (date: Date): string => {
   return dayOfWeek[obj.getDay()]
 }
 
-// Date オブジェクトを受け取って yyyy-mm-dd の文字列を返す
+/** Date オブジェクトを受け取って yyyy-mm-dd の文字列を返す */
 export const formatDate = (date: Date): string => {
   const options: Intl.DateTimeFormatOptions = {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
+    day: 'numeric'
   }
   return new Date(date).toLocaleDateString('ja', options)
 }
 
-// Date オブジェクトを受け取って hh:mm の時刻を返す
+/**  Date オブジェクトを受け取って hh:mm の時刻を返す */
 export const hhmm = (date: Date): string => {
   const hour = date.getHours().toString().padStart(2, '0')
   const minute = date.getMinutes().toString().padStart(2, '0')
