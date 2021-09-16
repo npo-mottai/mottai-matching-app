@@ -9,7 +9,7 @@ export default {
   head: {
     title: 'マッチングサービス | NPO法人 MOTTAI',
     htmlAttrs: {
-      lang: 'ja',
+      lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },
@@ -18,10 +18,10 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'NPO 法人 MOTTAI が運営する、日本各地の農家さんと、そのお手伝いをしながら農業体験をしてみたい方を繋げるマッチングサービスです。「労働」とその対価としての「お金」の交換ではなく、「農業体験・お手伝い」と「報酬として野菜や果物を渡す」という形式の新しいコミュニケーションをつくることで、農家さんと私たちの間に新しい関係性が生まれたり、農家さんが抱えている規格外野菜などの良い行き場になったりすることを期待しています。',
-      },
+          'NPO 法人 MOTTAI が運営する、日本各地の農家さんと、そのお手伝いをしながら農業体験をしてみたい方を繋げるマッチングサービスです。「労働」とその対価としての「お金」の交換ではなく、「農業体験・お手伝い」と「報酬として野菜や果物を渡す」という形式の新しいコミュニケーションをつくることで、農家さんと私たちの間に新しい関係性が生まれたり、農家さんが抱えている規格外野菜などの良い行き場になったりすることを期待しています。'
+      }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -40,7 +40,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxt-hero-icons/outline/nuxt',
-    '@nuxt-hero-icons/solid/nuxt',
+    '@nuxt-hero-icons/solid/nuxt'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -48,7 +48,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://firebase.nuxtjs.org/guide/getting-started
-    '@nuxtjs/firebase',
+    '@nuxtjs/firebase'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -61,19 +61,19 @@ export default {
   firebase: {
     config: {
       dev: devFirebaseServiceKey,
-      prod: prodFirebaseServiceKey,
+      prod: prodFirebaseServiceKey
     },
     customEnv: true,
     services: {
       firestore: true,
       functions: true,
       storage: true,
-      analytics: true,
+      analytics: true
     },
-    onFirebaseHosting: true,
+    onFirebaseHosting: true
   },
 
   env: {
-    FIRE_ENV: process.env.FIRE_ENV,
-  },
+    FIRE_ENV: process.env.FIRE_ENV
+  }
 }
