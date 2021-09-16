@@ -12,17 +12,9 @@
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "baseUrl": "./",
-    // "paths": {
-    // "*": ["types/*"]
-    // --> import { Work } from 'work' こう書けるようになる
-    // "aiueo": ["types/work"]
-    // --> import { Work } from 'aiueo' こう書けるようになる
-    // },
     "paths": {
       "~/*": ["./*"],
-      // --> import { Work } from '~/types/work' こう書けるようになる
       "@/*": ["./*"]
-      // --> import { Work } from '@/types/work' こう書けるようになる
     },
     "types": ["@nuxt/types", "@nuxtjs/axios", "@types/node"]
   },
