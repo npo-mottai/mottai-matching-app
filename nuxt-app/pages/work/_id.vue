@@ -1,95 +1,12 @@
 <template>
   <div>
-    <div v-if="loading">
-      <!-- TODO: ローディングコンポーネント -->
-      ...
-    </div>
-    <div v-else-if="work">
+    <div>
       <div class="w-screen" style="background-color: #e6f2ff">
         <div class="content-container">
-          <div class="hidden sm:block pt-16 pb-2">
-            <div
-              class="
-              bg-white
-              rounded-xl
-              shadow-md
-              overflow-hidden
-              p-4
-              mb-8
-              md:mx-16
-              lg:mx-32
-            "
-            >
-              <div class="flex">
-                <div class="p-4">
-                  <img
-                    class="w-48 rounded-xl"
-                    :src="work.mainImageURL"
-                    alt="work-thumbnail-image"
-                  >
-                </div>
-                <div class="flex-1 p-4">
-                  <h3>{{ work.title }}</h3>
-                  <ul>
-                    <p>場所：{{ work.address }}</p>
-                    <p>最寄り駅：{{ work.station }}</p>
-                    <p>報酬：{{ work.reward }}</p>
-                    <p>更新日：{{ updateDate(work.updatedAt) }}</p>
-                  </ul>
-                </div>
-              </div>
-              <div class="flex justify-center">
-                <button
-                  class="text-white font-bold py-2 px-4 rounded-xl"
-                  style="background-color: #3ea8ff"
-                >
-                  この仕事に申し込む
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="sm:hidden flex justify-center">
-            <div
-              class="
-              work-summary-section
-              sm:w-6/12
-              md:w-7/12
-              lg:w-6/12
-              xl:w-5/12
-              px-4
-              pt-16
-              pb-2
-            "
-            >
-              <div
-                class="bg-white rounded-xl shadow-md overflow-hidden pb-4 mb-8"
-              >
-                <p>
-                  <img src="/img/yago-san.jpg" alt="work-thumbnail-image">
-                </p>
-                <div class="p-4">
-                  <h3>{{ work.title }}</h3>
-                  <ul>
-                    <p>場所：{{ work.address }}</p>
-                    <p>最寄り駅：{{ work.station }}</p>
-                    <p>報酬：{{ work.reward }}</p>
-                    <p>更新日：{{ updateDate(work.updatedAt) }}</p>
-                  </ul>
-                </div>
-                <div class="flex justify-center">
-                  <button
-                    class="text-white font-bold py-2 px-4 rounded-xl"
-                    style="background-color: #3ea8ff"
-                  >
-                    この仕事に申し込む
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <WorkSummaryCard :work="work" :show-skelton="loading" />
         </div>
       </div>
-      <div class="w-screen" style="background-color: #eff3f8">
+      <div v-if="work" class="w-screen" style="background-color: #eff3f8">
         <div class="content-container">
           <div class="work-info-section px-4 pt-8 pb-16">
             <div class="host-info pb-12">
@@ -120,16 +37,6 @@
                   <p class="pb-2">
                     {{ work.description }}
                   </p>
-                  <!-- <p class="pb-2">
-                    みかんの収穫や、その他、農作業全般の体験・お手伝いをしてくれる方を募集します！
-                  </p>
-                  <p class="pb-2">
-                    場所は小田原市石橋 322 の農場で、最寄り駅は JR
-                    早川駅・小田原駅です。土曜日は足柄上郡松田町の畑での作業となる可能性もあります。小田原でも松田町でも車の送迎は可能ですので、必要な方はお伝え下さい。
-                  </p>
-                  <p class="pb-2">
-                    日時は、月火水木金土の7時30分～11時30分、または、13時～17時30分の間のお好きな時間をお知らせ下さい。お互いの日程を調整して決められたらと思います。
-                  </p> -->
                 </div>
               </div>
               <div>
@@ -197,12 +104,13 @@ import { Component, Vue } from 'nuxt-property-decorator'
 import { Work } from '~/types/work'
 import { formatDate, japaneseDayOfWeek } from '~/utils/datetime/datetime'
 import { fetchWork } from '~/utils/firestore/firestoreHandlers'
+import WorkSummaryCard from '~/components/WorkSummaryCard.vue'
 
 @Component({
-  name: 'WorkListSection',
-  scrollToTop: true,
   layout: 'default',
-  components: {}
+  components: {
+    WorkSummaryCard
+  }
 })
 export default class extends Vue {
   loading: boolean = true
@@ -227,6 +135,10 @@ export default class extends Vue {
 
   hostName (work: Work): string {
     return `${work.hostLastName} ${work.hostFirstName}（${work.hostLastNameKana} ${work.hostFirstNameKana}）`
+  }
+
+  description (s: string): string {
+    return s
   }
 }
 </script>
