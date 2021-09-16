@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    // "paths": {
+    // "*": ["types/*"]
+    // --> import { Work } from 'work' こう書けるようになる
+    // "aiueo": ["types/work"]
+    // --> import { Work } from 'aiueo' こう書けるようになる
+    // },
+    "paths": {
+      "~/*": ["./*"],
+      // --> import { Work } from '~/types/work' こう書けるようになる
+      "@/*": ["./*"]
+      // --> import { Work } from '@/types/work' こう書けるようになる
+    },
+    "types": ["@nuxt/types", "@nuxtjs/axios", "@types/node"]
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"]
+}
