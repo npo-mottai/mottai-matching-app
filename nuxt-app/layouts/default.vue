@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="">
-      <div v-if="showSizeIndicator"><WindowSizeIndicator /></div>
+      <div v-if="showSizeIndicator">
+        <WindowSizeIndicator />
+      </div>
       <AppHeader />
       <Nuxt />
       <AppFooter />
@@ -20,11 +22,11 @@ import WindowSizeIndicator from '~/components/WindowSizeIndicator.vue'
   components: {
     AppHeader,
     AppFooter,
-    WindowSizeIndicator,
-  },
+    WindowSizeIndicator
+  }
 })
 export default class extends Vue {
-  get showSizeIndicator(): boolean {
+  get showSizeIndicator (): boolean {
     return process.env.NODE_ENV === 'development'
   }
 }
